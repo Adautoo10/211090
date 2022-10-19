@@ -22,6 +22,9 @@ namespace _211090.Views
 
         }
 
-      
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
