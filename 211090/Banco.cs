@@ -58,6 +58,12 @@ namespace _211090
 
                 Comando.ExecuteNonQuery();
 
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Marcas" +
+                   "(id integer auto_increment primary key, " +
+                   "marca char(20))" , Conexao);
+
+                Comando.ExecuteNonQuery();
+
                 FecharConexao();
             }
             catch (Exception e)
