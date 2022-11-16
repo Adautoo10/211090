@@ -64,6 +64,13 @@ namespace _211090
 
                 Comando.ExecuteNonQuery();
 
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS categoria (" +
+                                        " id INT AUTO_INCREMENT," +
+                                        " descricao VARCHAR(150)," +
+                                        " PRIMARY KEY (id));", Conexao);
+                Comando.ExecuteNonQuery();
+
+
                 FecharConexao();
             }
             catch (Exception e)

@@ -30,5 +30,11 @@ namespace _211090
             FrmMarca form = new FrmMarca();
             form.Show();
         }
+
+        private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCategoria form = new FrmCategoria();
+            form.Show();
+        }
     }
 }
