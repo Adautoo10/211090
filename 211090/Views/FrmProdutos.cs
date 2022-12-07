@@ -56,12 +56,7 @@ namespace _211090.Views
             cboMarca.DisplayMember = "marca";
             cboMarca.ValueMember = "id";
 
-            limpaControles();
-            carregarGrid("");
-
-            dvgProdutos.Columns["idCategoria"].Visible = false;
-            dvgProdutos.Columns["idMarca"].Visible = false;
-            dvgProdutos.Columns["foto"].Visible = false;
+           
         }
 
         private void cboCategoria_SelectedIndexChanged(object sender, EventArgs e)
